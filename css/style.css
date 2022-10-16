@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+  
+/* ------Стилізація----------- */
+/* [class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+} */
+
+
+
+/* Автомобіль */
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px;
+    
+}
+
+body{
+    background: url(../img/road.jpg) 0 0 / 100% no-repeat; 
+}
+
+.car__first-wheel{
+    position: absolute;
+    top: 400px;
+    left: 540px; 
+}
+.car__second-wheel{
+    position: absolute;
+    top: 400px;
+    left: 720px; 
+}
+.wheel {
+    min-width: 100px; 
+    min-height: 100px;
+    background-color: rgb(121, 118, 118);
+    z-index: 4;
+    border-radius: 50%;
+    border: 20px solid black;
+}
+.car__frame {
+    background-color: white;
+    min-width: 370px;
+    min-height: 100px;
+    z-index: 3;
+    border-radius:  30% 30% 10% 10% ;
+    border: 3px solid rgb(5, 5, 5);
+
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+
+.car__text{
+    background-color: rgb(40, 116, 230);
+    min-width: 366px;
+    min-height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    z-index: 3;
+    border-radius:  30% 30% 10% 10% ;
+
+    position: absolute;
+    top: 370px;
+    left: 502px;
+}
+
+.car__top{
+    background-color: white;
+    min-width: 220px;
+    min-height: 120px;
+    z-index: 3;
+    border-radius:  40% 40% 0% 0% ;
+    border: 3px solid rgb(5, 5, 5);
+
+    position: absolute;
+    top: 234px;
+    left: 560px;
+}
+.car__signal{
+    background-color:rgb(245, 11, 11);
+    min-width: 30px;
+    min-height: 20px;
+    z-index: 3;
+    border-radius:  40% 40% 0% 0% ;
+    border: 3px solid rgb(5, 5, 5);
+
+    position: absolute;
+    top: 217px;
+    left: 660px;
+}
+
+
+.window {
+    min-width: 70px; 
+    min-height: 80px;
+    background-color: rgb(135, 190, 228);
+    z-index: 4;
+    border: 3px solid rgb(61, 60, 60);
+}
+
+.car__first-window {
+    border-radius:  0% 30% 0% 0% ;
+
+    position: absolute;
+    top: 260px;
+    left: 680px;
+}
+
+.car__first-window:hover{
+    min-width: 70px; 
+    min-height: 30px;
+    background-color: rgb(135, 190, 228);
+    z-index: 4;
+    border: 3px solid rgb(61, 60, 60);
+    border-radius:  0% 30% 0% 0% ;
+
+    position: absolute;
+    top: 310px;
+    left: 680px;
+    transition: 2s;
+}
+
+.car__second-window {
+    border-radius:  30% 00% 0% 0% ;
+    position: absolute;
+    top: 260px;
+    left: 595px;
+}
+
+.car__img {
+    max-width: 50px ;
+    position: absolute;
+    top: 259px;
+    left: 680px;
+    z-index: 3;
+
+}
+.image {
+    max-width: 100%;  
+}
+
+
+/* Світлофор */
+
+.traffic-lights__column {
+    background-color: rgb(75, 75, 75);
+    min-width: 30px;
+    min-height: 220px;
+    z-index: 3;
+    border: 3px solid rgb(5, 5, 5);
+
+    position: absolute;
+    top: 180px;
+    left: 975px;
+}
+.traffic-lights__main {
+    background-color: rgb(97, 93, 93);
+    min-width: 80px;
+    min-height: 120px;
+    z-index: 3;
+    border: 3px solid rgb(5, 5, 5);
+
+    position: absolute;
+    top: 80px;
+    left: 952px;
+}
+.traffic-lights__bulb-green {
+    min-width: 30px; 
+    min-height: 30px;
+    background-color: rgb(45, 151, 51);
+    z-index: 3;
+    border-radius: 50%;
+    border: 2px solid black;
+    opacity: 0.3;
+
+    position: absolute;
+    top: 90px;
+    left: 975px; 
+
+
+    
+
+}
+.traffic-lights__bulb-yellow {
+    min-width: 30px; 
+    min-height: 30px;
+    background-color: rgb(255, 243, 82);
+    z-index: 3;
+    border-radius: 50%;
+    border: 2px solid black;
+    opacity: 0.3;
+
+    position: absolute;
+    top: 125px;
+    left: 975px; 
+
+}
+.traffic-lights__bulb-red {
+    min-width: 30px; 
+    min-height: 30px;
+    background-color: rgb(245, 11, 11);
+    z-index: 3;
+    border-radius: 50%;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 160px;
+    left: 975px; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
